@@ -1,0 +1,60 @@
+.about-us-container {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.top-section {
+  margin-bottom: 60px;
+}
+
+.about-us-image {
+  width: 70%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-us-text {
+  padding: 20px;
+}
+
+.about-us-title {
+  color: #151875;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-us-description {
+  color: #6c6c6c;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-us-button {
+    font-size: large;
+  background-color: #FB2E86;
+  border-color: #FB2E86;
+  color: white;
+  border-radius: 8px;
+  padding: 20px 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-us-button:hover {
+  background: #c51e63!important;
+  border-color: #c51e63!important;
+  transform: translateY(-2px);
+  color: white!important;
+}
+
+.features-section {
+  text-align: center;
+}
+
+.features-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #151875;
+  margin-bottom: 40px;
+}
