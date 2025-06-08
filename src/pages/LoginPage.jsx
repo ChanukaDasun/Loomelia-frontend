@@ -1,4 +1,3 @@
-import React from 'react';
 import { Form, Input, Button, Typography, Card } from 'antd';
 import './LoginPage.css';
 
@@ -12,7 +11,7 @@ const LoginPage = () => {
   return (
     <div className="login-container">
       <Card className="login-card">
-        <Title level={2}>Login</Title>
+        <Title style={{ color: 'var(--color-primary)' }} level={2}>Login</Title>
         <Text className="login-subtitle">
           Please login using account detail bellow.
         </Text>

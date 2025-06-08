@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import { Menu, Button, Drawer } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import { loomeliaLogo, shoppingCart, wishlistImg } from "../../../assets/Assets";
@@ -9,11 +10,11 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const items = [
-    { label: "Home", key: "home" },
-    { label: "Shop", key: "shop" },
-    { label: "About", key: "about" },
-    { label: "Contact", key: "contact" },
-    { label: "FAQs", key: "faqs" },
+    { label: <Link to="/customer">Home</Link>, key: "home" },
+    { label: <Link to="/customer/allproducts">Shop</Link>, key: "shop" },
+    { label: <Link to="/customer/aboutus">About</Link>, key: "about" },
+    { label: <Link to="/customer/contactus">Contact</Link>, key: "contact" },
+    { label: <Link to="/customer/faqs">FAQs</Link>, key: "faqs" },
   ];
 
   const handleClick = (e) => {
@@ -41,9 +42,11 @@ const Navbar = () => {
         </Menu>
 
         <div className="navbar-buttons">
-          <Button shape="round">
-            Login
-          </Button>
+          <Link to='/'>
+            <Button shape="round">
+              Login
+            </Button>
+          </Link>
           <Button shape="round">
             Sign up
           </Button>

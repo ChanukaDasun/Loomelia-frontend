@@ -1,0 +1,263 @@
+/* Footer Styles */
+.footer {
+  font-family: 'Lato', sans-serif;
+}
+
+.footer-main {
+  background-color: #EEEFFB;
+  padding: 60px 0 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  height: 100%;
+}
+
+/* Brand Name */
+.footer-brand {
+  color: #101750 !important;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+/* Section Titles */
+.footer-section-title {
+  color: #101750 !important;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+/* Newsletter Section */
+.newsletter {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 0;
+  width: 100%;
+}
+
+.newsletter-input {
+  flex: 1;
+  height: 44px;
+  border-radius: 3px 0 0 3px !important;
+  border: 1px solid #E7E6EF;
+  font-size: 16px;
+}
+
+.newsletter-input::placeholder {
+  color: #8A8FB9;
+}
+
+.newsletter-button {
+  height: 44px;
+  background-color: #FB2E86 !important;
+  border-color: #FB2E86 !important;
+  border-radius: 0 3px 3px 0 !important;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.newsletter-button:hover {
+  background-color: #e02577 !important;
+  border-color: #e02577 !important;
+}
+
+/* Contact Info */
+.contact-info p {
+  color: #8A8FB9;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.contact-info address {
+  color: #8A8FB9;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-link {
+  color: #8A8FB9 !important;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #FB2E86 !important;
+  transform: translateX(3px);
+}
+
+.footer-link:active {
+  color: #e02577 !important;
+}
+
+/* React Router Link specific styles */
+a.footer-link {
+  color: #8A8FB9 !important;
+}
+
+a.footer-link:visited {
+  color: #8A8FB9 !important;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #9DA0AE;
+  padding: 20px 0;
+}
+
+.copyright {
+  color: #222324;
+  font-size: 16px;
+  margin: 0;
+  text-align: left;
+}
+
+/* Social Icons */
+.social-icons {
+  text-align: right;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #151875;
+  color: white !important;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #FB2E86;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(251, 46, 134, 0.3);
+}
+
+.social-link:visited {
+  color: white !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-main {
+    padding: 40px 0 30px;
+  }
+  
+  .footer-container {
+    padding: 0 15px;
+  }
+  
+  .footer-brand {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .newsletter {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .newsletter-input {
+    border-radius: 3px !important;
+  }
+  
+  .newsletter-button {
+    border-radius: 3px !important;
+    width: 100%;
+  }
+  
+  .contact-info {
+    text-align: center;
+  }
+  
+  .footer-links {
+    text-align: center;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-brand {
+    font-size: 28px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+  }
+  
+  .footer-link,
+  .contact-info p,
+  .contact-info address,
+  .copyright {
+    font-size: 14px;
+  }
+  
+  .newsletter-input,
+  .newsletter-button {
+    height: 40px;
+    font-size: 14px;
+  }
+  
+  .social-link {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+}
+
+/* Custom Ant Design overrides */
+.ant-input:focus,
+.ant-input-focused {
+  border-color: #FB2E86 !important;
+  box-shadow: 0 0 0 2px rgba(251, 46, 134, 0.2) !important;
+}
