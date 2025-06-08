@@ -1,0 +1,64 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distributes logo on left, menu center, buttons right */
+  padding: 0 24px;
+  background-color: white;
+  height: 80px;
+  border-bottom: 1px solid #f0f0f0;
+  flex-wrap: wrap;
+}
+
+/* Logo on the left */
+.navbar-logo img {
+  height: 80px;
+}
+
+/* Menu and buttons center/right section */
+.navbar-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-left: 24px;
+}
+
+/* Horizontal menu */
+.navbar-menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  border-bottom: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-icon {
+  height: 24px;
+  cursor: pointer;
+}
+
+.navbar-mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-desktop {
+    display: none;
+  }
+
+  .navbar-mobile-menu {
+    display: block;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+}
